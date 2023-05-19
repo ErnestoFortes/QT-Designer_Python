@@ -5,7 +5,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_MainWindow(object):#Aqui se cria a janela
+class Ui_MainWindow(object):#Classe para a criação e carregamento da janela
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1142, 821)
@@ -358,16 +358,16 @@ class Ui_MainWindow(object):#Aqui se cria a janela
     def esbeltez(self):#Está função Calcula o índice de esbeltez: a razão entre a altura efetiva e a espessura efetiva da parede
         numb1 = self.lineEdit_t.text()
         numb2 = self.lineEdit_2_h.text()
-        x = float(numb2)
-        y = float(numb1)
+        x = float(numb2)#Define a altura da parede
+        y = float(numb1)#Define a espessura da parede
         z = x/y
         self.labelResultadoEsbeltez.setText(f'{z:.2f}')
 
     def area(self):#Está função calcula a área da parede
         numb3 = self.lineEdit_t.text()
         numb4 = self.lineEdit_3_C.text()
-        aa = float(numb3)
-        bb = float(numb4)
+        aa = float(numb3)#define o comprimento da parede
+        bb = float(numb4)#define a espessura da parede
         AA = aa*bb
         self.labelResultadoArea.setText(f'{AA:.2f}')
 
