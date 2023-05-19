@@ -390,7 +390,7 @@ class Ui_MainWindow(object):#Classe para a criação e carregamento da janela
         l = float(numb10)
         fpk = (gg*ee*ff*l)/(0.875*0.336*0.7)/1000#Formaula para calculo da resistência característica de compressão simples do prisma
         if self.radioButton.isChecked():
-            fbk = fpk/0.5
+            fbk = fpk/0.5#resistência característica de compressão simples do bloco
         elif self.radioButton_2.isChecked():
             fbk = fpk/0.8
         self.labelResultadoPrisma.setText(f'{fpk:.2f}')#calcula a resistência característica de compressão simples do prisma - fpk
