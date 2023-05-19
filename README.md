@@ -13,5 +13,8 @@ Esta Parte da ABNT NBR 16868 também se aplica à análise do desempenho estrutu
 Linguagem para criação do código: Python (https://www.python.org/)
 Criação da janela com o QT Designer
 
+Ulilização da bliblioteca PyQt5
+
+
 
 
